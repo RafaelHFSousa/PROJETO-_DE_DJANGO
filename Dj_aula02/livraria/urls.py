@@ -1,10 +1,9 @@
-# ======== AULA 02 ========
+# ======== AULA 03 ========
 from django.urls import path
-from livraria.views import home, sobre
-from django.http import HttpResponse
+from livraria.views import home, logout_user
 
 
 urlpatterns = [
-    path('', home, name='inicio'),
-    path('sobre/', sobre, name='sobre')
+    path('', home, name='home'),
+    path('logout/', logout_user, name='logout'),
 ]
